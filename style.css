@@ -1,0 +1,326 @@
+/* CSS RESET*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+a {
+    text-decoration: none;
+}
+/*FIN RESET*/
+
+/* HEADER Y NAVBAR*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu_navbar {
+    list-style: none;
+    font-family: 'Satoshi';
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3vw;
+    
+}
+
+.menu_navbar li {
+  width: 150px;
+  text-align: center;
+}
+
+.menu_navbar a {
+    transition: .1s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.menu_navbar a:hover {
+    font-weight: bold;
+    transition: .1s ease-in-out;
+}
+
+.burger {
+  display: none; /*oculta menu burger movil en desktop*/
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+
+/*INDEX*/
+
+.index_1 {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #81faa9;
+}
+
+.contenedor_i1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.contenedor_i2 {
+  background-color: rgb(177, 177, 177);
+  display: flex;
+  align-items: center;
+  width: 35vw;
+}
+
+.contenedor_i2 span {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.h1_index {
+  font-family: 'Satoshi';
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.p_index {
+  font-family: 'Work Sans';
+  padding-bottom: 50px;
+}
+
+.index_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.contenedor_i21 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#actividades {
+  font-family: 'Satoshi';
+  font-size: 3rem;
+}
+
+.contenedor_miniaturas {
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.miniatura {
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgb(180, 180, 180);
+}
+
+.titulo_actividad {
+  font-family: 'Satoshi';
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.imagen_miniatura {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.parrafo_actividad {
+  text-align: center;
+  font-family: 'Work Sans';
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  background-color: rgb(218, 218, 218);
+}
+
+h4 {
+  font-family: 'Satoshi';
+  font-size: 1.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  font-family: 'Satoshi';
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  .navbar {
+    justify-content: end;
+    width: 100%;
+  }
+
+  .menu_navbar {
+    position: fixed;
+    left: -100%;
+    top: 6rem; /*la distancia desde top al inicio del menu*/
+    flex-direction: column;
+    align-items: center;
+    background-color: #929292;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.menu_navbar.active {
+    left: 0;
+}
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    padding-right: 50px;
+}
+
+.burger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+}
