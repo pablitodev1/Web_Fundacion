@@ -229,6 +229,7 @@ header {
   justify-content: center;
   gap: 20px;
   background-color: rgb(180, 180, 180);
+  transition: 0.2s ease-in-out;
 }
 
 .miniatura:hover {
