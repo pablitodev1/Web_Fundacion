@@ -231,6 +231,11 @@ header {
   background-color: rgb(180, 180, 180);
 }
 
+.miniatura:hover {
+  background-color: #f5f5f5;
+  transition: 0.2s ease-in-out;
+}
+
 .titulo_actividad {
   font-family: 'Satoshi';
   font-size: 2rem;
